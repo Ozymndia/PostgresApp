@@ -18,3 +18,4 @@ D:\DB\PostgresApp\obj\Debug\net9.0\refint\PostgresApp.dll
 D:\DB\PostgresApp\obj\Debug\net9.0\PostgresApp.pdb
 D:\DB\PostgresApp\obj\Debug\net9.0\PostgresApp.genruntimeconfig.cache
 D:\DB\PostgresApp\obj\Debug\net9.0\ref\PostgresApp.dll
+D:\DB\PostgresApp\obj\Debug\net9.0\PostgresApp.sourcelink.json

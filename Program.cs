@@ -23,7 +23,7 @@ class Program
 {
     static void Main()
     {
-        string connectionString = "Host=localhost;Port=5432;Username=postgres;Password=pg123;Database=TestDatabase";
+        string connectionString = "Host=192.168.31.66;Port=5432;Username=postgres;Password=pg123;Database=TestDatabase";
 
         using IDbConnection db = new NpgsqlConnection(connectionString);
 

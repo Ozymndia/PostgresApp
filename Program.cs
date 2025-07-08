@@ -23,7 +23,7 @@ class Program
 {
     static void Main()
     {
-        string connectionString = "Host=192.168.31.66;Port=5432;Username=postgres;Password=pg123;Database=TestDatabase";
+        string connectionString = "Host=localhost;Port=5432;Username=postgres;Password=pg123;Database=TestDatabase";
 
         using IDbConnection db = new NpgsqlConnection(connectionString);
 
@@ -56,7 +56,7 @@ class Program
             splitOn: "id"
         ).Distinct().ToList();
 
-        Console.WriteLine("🔹 Пользователи и их роли:\n");
+        Console.WriteLine("Пользователи и их роли:\n");
         foreach (var user in users)
         {
             Console.WriteLine($"Пользователь: {user.Username} ({user.Email})");
@@ -77,7 +77,7 @@ class Program
 
         var roleCounts = db.Query<(string RoleName, int UserCount)>(sqlRoleCounts).ToList();
 
-        Console.WriteLine("🔸 Количество пользователей по ролям:\n");
+        Console.WriteLine("Количество пользователей по ролям:\n");
         foreach (var rc in roleCounts)
         {
             Console.WriteLine($"Роль: {rc.RoleName} — {rc.UserCount} пользователей");
